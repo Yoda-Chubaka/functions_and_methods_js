@@ -51,10 +51,18 @@ console.log(sum3(7)); // 7
 const h1 = document.querySelector(".class-text");
 h1.textContent = "And JS loves me too🔅";
 
+// ARRAY METHODS
+// concat
+const arr1 = ["apple", "pineapple", "kiwi", "raspberry"];
+const arr2 = [1, 2, 3, 4];
+const result = arr1.concat(arr2);
+console.log('concat:', result);
+// ['apple', 'pineapple', 'kiwi', 'raspberry', 1, 2, 3, 4]
 
-// const arr1 = ["apple", "pineapple", "kiwi", "raspberry"];
-// const arr2 = [1, 2, 3, 4];
-// const sum = arr1.concat(arr2);
-// console.log(sum);
-
-// const text = document.querySelector(".class-text");
+// every
+const arr3 = [1, 2, 3, 4];
+const check = (element) => {
+    return element > 2;
+    }
+const result1 = arr3.every(check);
+console.log('every:', result1); // false
